@@ -8,7 +8,7 @@ object TestNujan extends App {
   val rootGroup = ncWriter.getRootGroup
   
   // Define dimensions
-  val tdim = rootGroup.addDimension("time", 2) //TODO: unlimited?
+  val tdim = rootGroup.addDimension("time", 2) //Note: unlimited not supported
   
   // Define variables
   val tvar = rootGroup.addVariable("time", TP_STRING_VAR, Array(tdim), null, null, 0)
